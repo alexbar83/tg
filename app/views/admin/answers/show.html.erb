@@ -1,0 +1,31 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-5 mb-3">
+    <div class="card mt-3 mb-3">
+      <div class="card-header">
+        <h1 class="card-title">
+          <%= t('.header') %>
+        </h1>
+      </div>
+
+      <div class="card-body">
+        <p class="card-text mt-2">
+          <%= @answer.question.body %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-7 mt-3 mb-3">
+    <p>
+      <b><%= t('.answer') %>:</b>
+      <%= @answer.body %>
+    </p>
+
+    <p>
+      <b><%= t('.correct') %>:</b>
+      <%= @answer.correct %>
+    </p>
+
+    <%= link_to t('navigation.back'), admin_question_path(@answer.question), class: "btn btn-primary" %>
+  </div>
+</div> 
