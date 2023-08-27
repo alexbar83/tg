@@ -1,0 +1,47 @@
+@import "colors";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: $primary-text-color;
+  margin-bottom: 180px; /* Margin bottom by footer height */
+}
+
+header {
+  color: $secondary-color;
+  background-color: $primary-color;
+  margin-bottom: 30px;
+
+  h1 {
+    text-align: center;
+
+    a {
+      color: $secondary-color;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      &:visited {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+footer {
+  color: $primary-color;
+  background-color: $secondary-color;
+  padding: 35px 5px 25px 5px;
+  border-top: 5px solid darken($secondary-color, 25%);
+  margin-top: 20px;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+} 

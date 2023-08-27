@@ -1,0 +1,20 @@
+<p>
+  <%= link_to t('.new_question'), new_admin_test_question_path(@test),
+              class: "btn btn-outline-primary btn-lg" %>
+</p>
+
+<% if @test.questions.present? %>
+  <table class="table table-striped table-hover">
+    <thead class="thead-dark">
+    <tr>
+      <th><%= t('.table.body') %></th>
+      <th class="text-center"><%= t('.table.actions') %></th>
+    </tr>
+    </thead>
+
+    <%= render partial: 'admin/questions/question', collection: @test.questions %>
+
+  </table>
+<% else %>
+  <p><%= t('.no_questions_available') %></p>
+<% end %> 
