@@ -10,6 +10,9 @@ ru:
       answer:
         create: "Создать Ответ"
         update: "Обновить Ответ"
+      badge:
+        create: "Создать Бэйдж"
+        update: "Обновить Бэйдж"
     select:
       prompt: "Выберите категорию:"
 
@@ -100,7 +103,36 @@ ru:
       failure: "Во время сохранения gist произошла ошибка!"
 
   admin:
-    
+     badges:
+      create:
+        success: "Бэйдж успешно создан."
+      index:
+        header: "Доступные Бэйджи"
+        new_badge: "Новый бэйдж"
+        no_badges_available: "Нет доступных бэйджей"
+      edit:
+        header: "Редактировать Бэйдж"
+      new:
+        header: "Создать Новый Бэйдж"
+      update:
+        success: "Бэйдж успешно обновлен!"
+      destroy:
+        success: "Бэйдж успешно удалён!"
+      show:
+        badge: "Бэйдж"
+        badges: "Бэйджи"
+        badge_name: "Название Бэйджа"
+        image_url: "Image Url"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      badge_table:
+        table:
+          title: "Название"
+          image: "Изображение"
+          rule_type: "Rule Type"
+          rule_option: "Rule Option"
+          actions: "Действия"
+        no_badges_available: "Нет доступных бэйджей"
 
     tests:
       create:
@@ -186,5 +218,19 @@ ru:
       subject: "Вы успешно завершили тест на TestGuru!"
 
   gist_question_service:
-    question_about: "Вопрос про %{test_title} от TestGuru"   
+    question_about: "Вопрос про %{test_title} от TestGuru"  
+  badges:
+    index:
+      header: "Доступные Бэйджи"
+      no_badges_available: "Нет доступных бэйджей"
+    collected:
+      header: "Полученные бэйджи Гуру"
+      no_badges_available: "Нет полученных бэйджей"
+    badge_table:
+      table:
+        title: "Название"
+        image: "Изображение"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      no_badges_available: "Нет доступных бэйджей" 
       

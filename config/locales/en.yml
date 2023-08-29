@@ -10,6 +10,9 @@ en:
       answer:
         create: "Create Answer"
         update: "Update Answer"
+      badge:
+        create: "Create Badge"
+        update: "Update Badge"
       
     select:
       prompt: "Please select"
@@ -97,6 +100,31 @@ en:
       failure: "An error occurred while saving gist!"
 
   admin:
+    badge: "New Badge"
+        no_badges_available: "No available badges"
+      edit:
+        header: "Edit Badge"
+      new:
+        header: "Create New Badge"
+      update:
+        success: "Badge updated"
+      destroy:
+        success: "Badge deleted!"
+      show:
+        badge: "Badge"
+        badges: "Badges"
+        badge_name: "Badge name"
+        image_url: "Image Url"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      badge_table:
+        table:
+          title: "Title"
+          image: "Image"
+          rule_type: "Rule Type"
+          rule_option: "Rule Option"
+          actions: "Actions"
+        no_badges_available: "No badges available"
     
     tests:
       create:
@@ -181,4 +209,20 @@ en:
 
   gist_question_service:
     question_about: "A question about %{test_title} from TestGuru"
+
+    
+  badges:
+    index:
+      header: "Available Badges"
+      no_badges_available: "No badges available"
+    collected:
+      header: "Badges of Guru"
+      no_badges_available: "No badges available"
+    badge_table:
+      table:
+        title: "Title"
+        image: "Image"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      no_badges_available: "No badges available"
       

@@ -7,6 +7,7 @@ class User < ApplicationRecord
     has_many :gists
     
   has_many :tests, through: :test_passages
+  has_many :badges, through: :attaiments
 
    validates :email, presence: true
                     
