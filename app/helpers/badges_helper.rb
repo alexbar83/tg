@@ -5,8 +5,7 @@ module BadgesHelper
 
   def badge_image(image_url: image_url, image_size: image_size)
     badge_image_size = image_size == "small" ? "badge-image-small" : "badge-image"
-    image_tag image_url, class: badge_image_size
-  rescue Sprockets::Rails::Helper::AssetNotFound
+    rescue Sprockets::Rails::Helper::AssetNotFound
     image_tag DEFAULT_BADGE_IMAGE_URL, class: badge_image_size
   end
 

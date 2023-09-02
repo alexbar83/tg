@@ -12,8 +12,7 @@
 
         <p class="form-field is-required">
           <%= form.label :image_url %>
-          <%= form.text_field :image_url, id: :test_level, class: 'form-control',
-                              value: (form.object.image_url || BadgesHelper::DEFAULT_BADGE_IMAGE_URL) %>
+          <%= form.select :image_url, options_for_select(Badge::BadgesHelper), class: 'form-control' %>
         </p>
         <p class="alert alert-primary">
         Default: '<%= BadgesHelper::DEFAULT_BADGE_IMAGE_URL %>'<br><br>
