@@ -7,7 +7,7 @@ class TestPassagesController < ApplicationController
 
   def result
     if @test_passage.test_passed?
-      @badges = BadgeGranterService.new(@test_passage).achievements
+      @badges = BadgeGranterService.new(@test_passage).attainments
     end
   end
 

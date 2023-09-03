@@ -12,17 +12,13 @@
 
         <p class="form-field is-required">
           <%= form.label :image_url %>
-          <%= form.select :image_url, options_for_select(Badge::BadgesHelper), class: 'form-control' %>
+          <%= form.select :rule_type, Badge::BADGE_IMG.map { |type| [type ,type] } %>
         </p>
-        <p class="alert alert-primary">
-        Default: '<%= BadgesHelper::DEFAULT_BADGE_IMAGE_URL %>'<br><br>
-        Option 1: '<%= BadgesHelper::BADGE_IMAGE_URLS.first %>',<br>
-        Option 2: '<%= BadgesHelper::BADGE_IMAGE_URLS.second %>'
-        </p><br>
+       
 
         <p class="form-field is-required">
           <%= form.label :rule_type %>
-          <%= form.text_field :rule_type, id: :rule_type, class: 'form-control' %>
+          <%= form.select :rule_type, Badge::BADGE_TYPES.map { |type| [type, type] } %>
         </p><br>
 
         <p class="alert alert-primary">

@@ -1,3 +1,28 @@
+ 
+class BadgeGranterService
+
+  def initialize(test_passage)
+    @test_passage = test_passage
+    @badges = []
+  end
+
+  def call
+    check_attainments!
+    @test_passage.user.badges.push(@badges)
+  end
+
+  def achievements
+    check_attainments!
+    @badges
+  end
+
+  private
+
+  def check_attainments!
+    @badges = Badge.all.select do |badge|
+      send("rule_type_#{badge.rule_type.downcase}?", badge.rule_option)
+    end
+  end
   def rule_type_first_try?(_value)
     test_passages = TestPassage.where(user: @test_passage.user, test: @test_passage.test)
     test_passages.count == 1
