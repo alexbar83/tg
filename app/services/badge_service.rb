@@ -28,11 +28,10 @@ class BadgeGranterService
     test_passages.count == 1
   end
 
-  def rule_type_category?(category_id)
+  def rule_type_category?(category)
+    return unless category.is_a?(Category)
    
-    return false if category_id != @test_passage.test.category_id
-
-    tests = Test.where(category: category_id).pluck(:id)
+    tests = @test_passage.test.by_category(category).pluck(:id)
     completed = @test_passage.user.test_passages.passed
                   .where(test: tests)
                   .pluck(:test_id).uniq
@@ -40,10 +39,9 @@ class BadgeGranterService
   end
 
   def rule_type_level?(level)
+    return unless level.is_a?(Integer)
   
-    return false if level != @test_passage.test.level
-
-    tests = Test.where(level: level).pluck(:id)
+    tests = @test_passage.test.where(level: level).pluck(:id)
     completed = @test_passage.user.test_passages.passed
                   .where(test: tests)
                   .pluck(:test_id).uniq
