@@ -20,7 +20,7 @@ ru:
       test:
         title: "Название"
         level: "Уровень"
-       
+        timer: "Таймер"
         category_id: "Категория"
       question:
         body: "Тело вопроса"
@@ -75,7 +75,7 @@ ru:
         level: "Уровень"
         category: "Категория"
         questions: "Вопросы"
-        
+        timer: "Таймер"
         actions: "Действия"
     test:
       start_button: "Старт"
@@ -144,7 +144,7 @@ ru:
           level: "Уровень"
           questions: "Вопросы"
           category: "Категория"
-         
+          timer: "Таймер"
           actions: "Действия"
         no_tests_available: "Нет доступных тестов"
         new_test: "Новый тест"
@@ -160,7 +160,7 @@ ru:
         tests: "Тест"
         title: "Название"
         level: "Уровень"
-        
+        timer: "Таймер"
         author: "Автор"
         category: "Категория"
         questions: "Вопросы"
