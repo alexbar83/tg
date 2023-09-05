@@ -7,6 +7,7 @@ class User < ApplicationRecord
     has_many :gists
     
   has_many :tests, through: :test_passages
+  has_many :badges, through: :attaiments
 
    validates :email, presence: true
                     
@@ -18,5 +19,12 @@ class User < ApplicationRecord
 
   def test_passage(test) 
     test_passages.order(id: :desc).find_by(test_id: test.id)
+  end
+   def full_name
+    [first_name, last_name].join(' ')
+  end
+  
+  def admin?
+    is_a?(Admin)
   end
 end

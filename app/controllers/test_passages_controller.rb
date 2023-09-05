@@ -6,9 +6,6 @@ class TestPassagesController < ApplicationController
   end
 
   def result
-    if @test_passage.test_passed?
-      @badges = BadgeGranterService.new(@test_passage).achievements
-    end
   end
 
   def gist

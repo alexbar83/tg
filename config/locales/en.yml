@@ -10,7 +10,9 @@ en:
       answer:
         create: "Create Answer"
         update: "Update Answer"
-      
+      badge:
+        create: "Create Badge"
+        update: "Update Badge"
     select:
       prompt: "Please select"
 
@@ -18,7 +20,7 @@ en:
       test:
         title: "Title"
         level: "Level"
-        timer: "Timer"
+      
         category_id: "Category"
       question:
         body: "Body"
@@ -71,6 +73,7 @@ en:
         level: "Level"
         category: "Category"
         questions: "Questions"
+       
         actions: "Actions"
     test:
       start_button: "Start"
@@ -81,7 +84,7 @@ en:
       all_quesions_number: "Number of All Questions in Test: %{total_questions}"
       questions_with_correct_answers: "Questions with Correct Answers: %{correct_questions}"
       all_tests: "All Tests"
-      
+      granted_badges: "Granted Badges"
       table:
         title: "Title"
         image: "Image"
@@ -91,13 +94,43 @@ en:
       header: "Passing the %{test_passage_test_title} Test"
       no_available_questions: "There is no available Questions"
       no_available_answers: "There is no available Answers"
-      
+      remaining_time: "Remaining time"
+      minutes: "minutes"
     gist:
       success: "Gist was successfully created! Link: %{url}"
       failure: "An error occurred while saving gist!"
 
   admin:
-    
+    badges:
+      create:
+        success: "Badge successfully created"
+      index:
+        header: "Available Badges"
+        new_badge: "New Badge"
+        no_badges_available: "No available badges"
+      edit:
+        header: "Edit Badge"
+      new:
+        header: "Create New Badge"
+      update:
+        success: "Badge updated"
+      destroy:
+        success: "Badge deleted!"
+      show:
+        badge: "Badge"
+        badges: "Badges"
+        badge_name: "Badge name"
+        image_url: "Image Url"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      badge_table:
+        table:
+          title: "Title"
+          image: "Image"
+          rule_type: "Rule Type"
+          rule_option: "Rule Option"
+          actions: "Actions"
+        no_badges_available: "No badges available"
     tests:
       create:
         success: "Test was successfully created."
@@ -122,7 +155,7 @@ en:
         tests: "Test"
         title: "Title"
         level: "Level"
-        timer: "Timer"
+        
         author: "Author"
         category: "Category"
         questions: "Questions"
@@ -181,4 +214,18 @@ en:
 
   gist_question_service:
     question_about: "A question about %{test_title} from TestGuru"
-      
+
+  badges:
+    index:
+      header: "Available Badges"
+      no_badges_available: "No badges available"
+    #collected:
+     # header: "Badges of Guru"
+      #no_badges_available: "No badges available"
+    badge_table:
+      table:
+        title: "Title"
+        image: "Image"
+        rule_type: "Rule Type"
+        rule_option: "Rule Option"
+      no_badges_available: "No badges available" 

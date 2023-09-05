@@ -26,14 +26,6 @@ class TestPassage < ApplicationRecord
     save!
   end
 
-  def timer_finish_time
-    created_at + test.timer.minutes
-  end
-
-  def time_is_up?
-    test.timer? && timer_finish_time.past?
-  end
-
   def success_percentage
     (correct_questions / total_questions.to_f) * 100
   end
