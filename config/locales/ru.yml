@@ -140,6 +140,7 @@ ru:
       index:
         header: "Доступные Тесты"
         table:
+          timer: "Лимит времени"
           title: "Название"
           level: "Уровень"
           questions: "Вопросы"

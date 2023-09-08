@@ -137,6 +137,7 @@ en:
       index:
         header: "Tricky Tests"
         table:
+          timer: "Time limit"
           title: "Title"
           level: "Level"
           questions: "Questions"
