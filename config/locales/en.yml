@@ -20,7 +20,7 @@ en:
       test:
         title: "Title"
         level: "Level"
-      
+        timer: "Timer"timer: "Timer"
         category_id: "Category"
       question:
         body: "Body"
@@ -73,7 +73,7 @@ en:
         level: "Level"
         category: "Category"
         questions: "Questions"
-       
+        timer: "Timer"
         actions: "Actions"
     test:
       start_button: "Start"
@@ -137,6 +137,7 @@ en:
       index:
         header: "Tricky Tests"
         table:
+          timer: "Time limit"
           title: "Title"
           level: "Level"
           questions: "Questions"
@@ -155,7 +156,7 @@ en:
         tests: "Test"
         title: "Title"
         level: "Level"
-        
+        timer: "Timer"
         author: "Author"
         category: "Category"
         questions: "Questions"

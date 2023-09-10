@@ -19,6 +19,9 @@
           <strong><%= t('.category') %>:</strong> <%= @test.category.title %>
         </p>
 
+        <p class="card-subtitle text-muted mb-4">
+          <strong><%= t('.timer') %>:</strong> <%= @test.timer %>
+        </p>
         
 
         <%= link_to t('navigation.edit'), edit_admin_test_path(@test), class: "card-link" %> |
